@@ -54,7 +54,6 @@ parts:
     after: [flutter-git]
     plugin: nil
     source: .
-    source-commit: &commit-ref b51fae3cba72d211d86342438bcb90778eee355c
     source-type: git
     build-attributes: [enable-patchelf]
     override-build: |
@@ -157,7 +156,6 @@ parts:
   flutter-git:
     plugin: nil
     source: .
-    source-commit: *commit-ref
     source-type: git
     override-pull: |
       # necessary when reruns using the same container
